@@ -7,7 +7,8 @@ This Chrome extension is a proof of concept only. It scans across multiple dates
 ## Features
 - Displays a small user interface on the reward portal.
 - Scans across available dates and shows status updates.
-- Logs to console.
+- Fixes the "Service unavailable" error that apeears on some searches.
+- Log to console and export to CSV.
 - Compatible with Chrome.
 
 ## Installation
