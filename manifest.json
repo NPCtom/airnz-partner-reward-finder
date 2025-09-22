@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Air NZ Partner Reward Finder",
+  "version": "1.1.2",
+  "description": "Scan Air New Zealand Partner Reward dates and show availability.",
+  "permissions": ["scripting", "activeTab", "webNavigation", "tabs"],
+  "host_permissions": [
+    "https://www.airnewzealand.co.nz/*",
+    "https://airnewzealand.co.nz/*"
+  ],
+  "background": { "service_worker": "sw.js" },
+  "action": { "default_title": "Air NZ Reward Finder" }
+}
