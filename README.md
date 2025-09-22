@@ -14,9 +14,8 @@ This Chrome extension is a proof of concept only. It scans across multiple dates
 ## Installation
 1. [Clone or download this repo](https://github.com/NPCtom/airnz-partner-reward-finder/archive/refs/heads/main.zip).
 2. Go to `chrome://extensions/` in your Chrome browser.
-3. Enable **Developer mode**.
-4. Click **Load unpacked** and select the folder with `manifest.json`.
-5. Navigate to the Air NZ booking page and try it out!
+3. Enable **Developer mode** in the top right corner.
+4. Click **Load unpacked** and select the extension folder. You will need to unzip the file before doing this.
 
 ## How to Use
 
