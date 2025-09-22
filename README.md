@@ -1,5 +1,7 @@
 # Air NZ Partner Reward Finder
 
+https://github.com/user-attachments/assets/e9454491-5319-40d8-9f69-8f14dddfcc02
+
 👋 As a side project I wanted to see if I could automate some of the repetitive searching involved in looking for Air New Zealand Star Alliance reward fares.
 
 This Chrome extension is a proof of concept only. It scans across multiple dates and highlights when business class rewards are available. 
