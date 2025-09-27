@@ -4,12 +4,12 @@ https://github.com/user-attachments/assets/e9454491-5319-40d8-9f69-8f14dddfcc02
 
 👋 As a side project I wanted to see if I could automate some of the repetitive searching involved in looking for Air New Zealand Star Alliance reward fares.
 
-This Chrome extension is a proof of concept only. It scans across multiple dates (±4 weeks) and highlights when business class rewards are available. 
+This Chrome extension is a proof of concept only. It scans across multiple dates (±4 weeks) and highlights when business class rewards are available.
 
 ## Features
 - Displays a small user interface on the reward portal.
 - Scans across available dates and shows status updates.
-- Fixes the "Service unavailable" error that apeears on some searches.
+- Fixes the "Service unavailable" error that appears on some searches.
 - Log to console and export to CSV.
 - Compatible with Chrome.
 
