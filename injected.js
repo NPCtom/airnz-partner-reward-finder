@@ -176,14 +176,7 @@
     const seg=(offer.flightSegments||[]).map(s=>(s.cabinClass||"").toLowerCase()).filter(Boolean);
     return (seg.length && seg.every(c=>c==="economy"));
   }
-  function passesAvailability(offer){
-    let saw=false;
-    if (Object.prototype.hasOwnProperty.call(offer,"availability")) { saw=true; if (+offer.availability>0) return true; }
-    for(const s of (offer.flightSegments||[])){
-      if (Object.prototype.hasOwnProperty.call(s,"availability")) { saw=true; if (+s.availability>0) return true; }
-    }
-    return !saw ? true : false; // accept if counters omitted
-  }
+  function passesAvailability(_offer){ return true; }
 
   // ---------- deep date swap ----------
   function cloneAndSwapDateEverywhere(tmpl, newDate){
