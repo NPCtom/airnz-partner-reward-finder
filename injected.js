@@ -48,6 +48,10 @@
           <input type="checkbox" id="airnz-biz" checked />
           <span>Include Business</span>
         </label>
+        <label style="display:flex;align-items:center;gap:6px;cursor:pointer">
+          <input type="checkbox" id="airnz-nonstop" />
+          <span>Non-stop only</span>
+       </label>
       </div>
       <div id="airnz-finder-body"><ul id="airnz-finder-list"></ul></div>
       <div id="airnz-finder-controls">
@@ -240,6 +244,7 @@
 
     const incEconomy = document.getElementById("airnz-econ")?.checked;
     const incBusiness = document.getElementById("airnz-biz")?.checked;
+    const nonstopOnly = document.getElementById("airnz-nonstop")?.checked;
     const wantCabins = (offer)=> (incBusiness && isBusinessOffer(offer)) || (incEconomy && isEconomyOffer(offer));
 
     setStatus(`Scanning ${dates.length} dates… 0/${dates.length}`);
@@ -269,7 +274,7 @@
             const dateLocal = leg.departureDateLocal || d;
             for (const offer of (leg.offers||[])) {
               if (!wantCabins(offer)) continue;
-              if (!passesAvailability(offer)) continue;
+              if (nonstopOnly && (offer.flightSegments||[]).length !== 1) continue;
               const cabin = isBusinessOffer(offer) ? "Business" : "Economy";
               const key = `${from}|${to}|${dateLocal}|${cabin}`;
               if (seen.has(key)) continue; seen.add(key);
